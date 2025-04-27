@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-26T11:25:57Z" name="box com" finished-at="2025-04-26T11:26:40Z" duration-ms="43279">
+    <groups>
+    </groups>
+    <test started-at="2025-04-26T11:25:57Z" name="box" finished-at="2025-04-26T11:26:40Z" duration-ms="43279">
+      <class name="tests.LogInPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LogInPageTest@742ff096]" started-at="2025-04-26T11:25:57Z" name="setup" finished-at="2025-04-26T11:26:26Z" duration-ms="29034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:tests.LogInPageTest@742ff096]" started-at="2025-04-26T11:26:26Z" name="verifyLoginPageTitle" finished-at="2025-04-26T11:26:26Z" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method signature="verifyResetPasswordTest()[pri:2, instance:tests.LogInPageTest@742ff096]" started-at="2025-04-26T11:26:26Z" name="verifyResetPasswordTest" finished-at="2025-04-26T11:26:26Z" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetPasswordTest -->
+        <test-method signature="loginTest()[pri:3, instance:tests.LogInPageTest@742ff096]" started-at="2025-04-26T11:26:26Z" name="loginTest" finished-at="2025-04-26T11:26:40Z" duration-ms="13361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogInPageTest@742ff096]" started-at="2025-04-26T11:26:40Z" name="tearDown" finished-at="2025-04-26T11:26:40Z" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LogInPageTest -->
+    </test> <!-- box -->
+  </suite> <!-- box com -->
+</testng-results>
