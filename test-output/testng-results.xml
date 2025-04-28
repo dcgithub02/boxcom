@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-27T11:22:52Z" name="box com" finished-at="2025-04-27T11:23:34Z" duration-ms="42023">
+  <suite started-at="2025-04-28T13:24:29Z" name="box com" finished-at="2025-04-28T13:25:11Z" duration-ms="42146">
     <groups>
     </groups>
-    <test started-at="2025-04-27T11:22:52Z" name="box" finished-at="2025-04-27T11:23:34Z" duration-ms="42023">
+    <test started-at="2025-04-28T13:24:29Z" name="box" finished-at="2025-04-28T13:25:11Z" duration-ms="42146">
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTest@1349883]" started-at="2025-04-27T11:22:52Z" name="setup" finished-at="2025-04-27T11:23:03Z" duration-ms="11114" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTest@2d901eb0]" started-at="2025-04-28T13:24:32Z" name="setup" finished-at="2025-04-28T13:24:34Z" duration-ms="2185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LogInPageTest@4a83a74a]" started-at="2025-04-27T11:23:03Z" name="setup" finished-at="2025-04-27T11:23:05Z" duration-ms="1908" status="PASS">
+        <test-method is-config="true" signature="setupHome()[pri:0, instance:tests.HomePageTest@2d901eb0]" started-at="2025-04-28T13:24:34Z" name="setupHome" finished-at="2025-04-28T13:24:43Z" duration-ms="8846" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTitle()[pri:1, instance:tests.HomePageTest@1349883]" started-at="2025-04-27T11:23:05Z" name="verifyTitle" finished-at="2025-04-27T11:23:10Z" duration-ms="5038" status="PASS">
+        </test-method> <!-- setupHome -->
+        <test-method signature="verifyTitle()[pri:1, instance:tests.HomePageTest@2d901eb0]" started-at="2025-04-28T13:24:43Z" name="verifyTitle" finished-at="2025-04-28T13:24:48Z" duration-ms="5037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="createFolder(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.HomePageTest@1349883]" started-at="2025-04-27T11:23:11Z" name="createFolder" data-provider="createFolder" finished-at="2025-04-27T11:23:25Z" duration-ms="13658" status="PASS">
+        <test-method signature="createFolder(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:tests.HomePageTest@2d901eb0]" started-at="2025-04-28T13:24:49Z" name="createFolder" data-provider="createFolder" finished-at="2025-04-28T13:25:04Z" duration-ms="14336" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,21 +40,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createFolder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@2d901eb0]" started-at="2025-04-28T13:25:04Z" name="tearDown" finished-at="2025-04-28T13:25:04Z" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePageTest -->
       <class name="tests.LogInPageTest">
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:tests.LogInPageTest@4a83a74a]" started-at="2025-04-27T11:23:05Z" name="verifyLoginPageTitle" finished-at="2025-04-27T11:23:05Z" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LogInPageTest@35dab4eb]" started-at="2025-04-28T13:24:29Z" name="setup" finished-at="2025-04-28T13:24:32Z" duration-ms="3097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:tests.LogInPageTest@35dab4eb]" started-at="2025-04-28T13:24:32Z" name="verifyLoginPageTitle" finished-at="2025-04-28T13:24:32Z" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="verifyResetPasswordTest()[pri:2, instance:tests.LogInPageTest@4a83a74a]" started-at="2025-04-27T11:23:10Z" name="verifyResetPasswordTest" finished-at="2025-04-27T11:23:10Z" duration-ms="47" status="PASS">
+        <test-method signature="verifyResetPasswordTest()[pri:2, instance:tests.LogInPageTest@35dab4eb]" started-at="2025-04-28T13:24:48Z" name="verifyResetPasswordTest" finished-at="2025-04-28T13:24:48Z" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResetPasswordTest -->
-        <test-method signature="loginTest()[pri:3, instance:tests.LogInPageTest@4a83a74a]" started-at="2025-04-27T11:23:25Z" name="loginTest" finished-at="2025-04-27T11:23:34Z" duration-ms="9255" status="PASS">
+        <test-method signature="loginTest()[pri:3, instance:tests.LogInPageTest@35dab4eb]" started-at="2025-04-28T13:25:04Z" name="loginTest" finished-at="2025-04-28T13:25:11Z" duration-ms="6514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogInPageTest@4a83a74a]" started-at="2025-04-27T11:23:34Z" name="tearDown" finished-at="2025-04-27T11:23:34Z" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LogInPageTest@35dab4eb]" started-at="2025-04-28T13:25:11Z" name="tearDown" finished-at="2025-04-28T13:25:11Z" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

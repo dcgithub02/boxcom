@@ -1,34 +1,23 @@
 package tests;
 
-import java.util.Properties;
-
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.box.pages.BasePage;
-import com.box.pages.HomePage;
-import com.box.pages.LogInPage;
 import com.box.utlis.ConstantsUtils;
 import com.box.utlis.ExcelUtlis;
 
-public class HomePageTest {
-WebDriver driver ;
-HomePage hp;
-BasePage base;
-LogInPage lp;
-Properties pp;
-@BeforeTest
-public void setup() {
-	base = new BasePage();
-	driver=base.init_driver("chrome");
-	pp=base.init_properties();
-	lp= new LogInPage(driver);
-	hp=lp.login(pp.getProperty("username"), pp.getProperty("password"));
-}
+public class HomePageTest extends BaseTest
+{
 
+		@BeforeClass
+	public void setupHome()
+	{
+		hp=lp.login(pp.getProperty("username"), pp.getProperty("password"));
+	}
 @Test(priority=1)
 public void verifyTitle()
 {

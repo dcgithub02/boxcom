@@ -6,18 +6,13 @@
   </listeners>
   <test thread-count="4" name="box(failed)">
     <classes>
-      <class name="tests.HomePageTest">
-        <methods>
-          <include name="createFolder" invocation-numbers="0"/>
-          <include name="verifyTitle"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- tests.HomePageTest -->
       <class name="tests.LogInPageTest">
         <methods>
           <include name="loginTest"/>
+          <include name="verifyLoginPageTitle"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="verifyResetPasswordTest"/>
         </methods>
       </class> <!-- tests.LogInPageTest -->
     </classes>

@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -14,18 +15,18 @@ import com.box.pages.LogInPage;
 import com.box.utlis.ConstantsUtils;
 import com.box.utlis.ExcelUtlis;
 
-public class LogInPageTest {
-	 BasePage base;
-	 WebDriver driver;
-	 LogInPage lp;
-	 Properties pp;
-	@BeforeTest
-	public void setup() {
-		base = new BasePage();
-		driver=base.init_driver("chrome");
-		lp= new LogInPage(driver);
-		pp=base.init_properties();
-	}
+public class LogInPageTest extends BaseTest{
+//	 BasePage base;
+//	 WebDriver driver;
+//	 LogInPage lp;
+//	 Properties pp;
+//	@BeforeTest
+//	public void setup() {
+//		base = new BasePage();
+//		driver=base.init_driver("chrome");
+//		lp= new LogInPage(driver);
+//		pp=base.init_properties();
+//	}
 	
 	@Test(priority=1)
 	public void verifyLoginPageTitle()
@@ -51,10 +52,10 @@ public class LogInPageTest {
 		lp.login(pp.getProperty("username"), pp.getProperty("password"));
 	}
 	
-	@AfterTest
-	public void tearDown()
-	{
-		driver.quit();
-	}
+//	@AfterTest
+//	public void tearDown()
+//	{
+//		driver.quit();
+//	}
 
 }
