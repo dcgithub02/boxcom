@@ -28,7 +28,7 @@ public class BaseTest
 	@BeforeClass
 	public void setup() {
 		base = new BasePage();
-		driver=base.init_driver("chrome");
+		driver=base.init_driver("firefox");
 		pp=base.init_properties();
 		lp= new LogInPage(driver);
 	}
