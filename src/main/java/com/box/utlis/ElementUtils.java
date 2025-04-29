@@ -59,7 +59,7 @@ public class ElementUtils extends BasePage{
 	public void doSelectDropdownUsingSelectByVisibleText(By locator,String value)
 	{
 		Select select= new Select(getElement(locator));
-		select.selectByContainsVisibleText(value);
+		select.selectByVisibleText(value);
 	}
 	public void doSelectDropdownUsingSelectByIndex(By locator,int index)
 	{
