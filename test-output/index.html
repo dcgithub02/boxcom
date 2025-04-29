@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-box_com" class="navigator-link">
-              <span class="suite-name border-passed">box com</span>
+              <span class="suite-name border-failed">box com</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-box_com" class="hide-methods failed suite-box_com"> (hide)</a> <!-- hide-methods failed suite-box_com -->
+                      <a href="#" panel-name="suite-box_com" class="show-methods failed suite-box_com"> (show)</a> <!-- show-methods failed suite-box_com -->
+                    </span>
+                    <div class="method-list-content failed suite-box_com">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-box_com" title="tests.HomePageTest" class="method navigator-link" hash-for-method="verifyTitle">verifyTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-box_com -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -120,11 +134,6 @@
                         <a href="#" panel-name="suite-box_com" title="tests.LogInPageTest" class="method navigator-link" hash-for-method="verifyResetPasswordTest">verifyResetPasswordTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-box_com" title="tests.HomePageTest" class="method navigator-link" hash-for-method="verifyTitle">verifyTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-box_com -->
                   </li>
                 </ul>
@@ -137,29 +146,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-box_com" class="panel box_com">
-          <div class="suite-box_com-class-passed">
+          <div class="suite-box_com-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createFolder(folder1, h2so4in2008@gmail.com, Editor)">
-                  </a> <!-- createFolder(folder1, h2so4in2008@gmail.com, Editor) -->
-                  <span class="method-name">createFolder</span>
-                  <span class="parameters">(folder1, h2so4in2008@gmail.com, Editor)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyTitle">
                   </a> <!-- verifyTitle -->
                   <span class="method-name">verifyTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [All Files | Powered by Box] but found [folder1 | Powered by Box]
+	at tests.HomePageTest.verifyTitle(HomePageTest.java:32)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-box_com-class-passed -->
+          </div> <!-- suite-box_com-class-failed -->
           <div class="suite-box_com-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -185,6 +190,22 @@
                   <a name="verifyResetPasswordTest">
                   </a> <!-- verifyResetPasswordTest -->
                   <span class="method-name">verifyResetPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-box_com-class-passed -->
+          <div class="suite-box_com-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createFolder(folder1, h2so4in2008@gmail.com, Editor)">
+                  </a> <!-- createFolder(folder1, h2so4in2008@gmail.com, Editor) -->
+                  <span class="method-name">createFolder</span>
+                  <span class="parameters">(folder1, h2so4in2008@gmail.com, Editor)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -249,28 +270,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createFolder')
 data.setCell(0, 2, 'tests.HomePageTest')
-data.setCell(0, 3, 14336);
+data.setCell(0, 3, 14490);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'tests.LogInPageTest')
-data.setCell(1, 3, 6514);
+data.setCell(1, 3, 10948);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyTitle')
 data.setCell(2, 2, 'tests.HomePageTest')
-data.setCell(2, 3, 5037);
+data.setCell(2, 3, 5058);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyResetPasswordTest')
 data.setCell(3, 2, 'tests.LogInPageTest')
-data.setCell(3, 3, 79);
+data.setCell(3, 3, 111);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyLoginPageTitle')
 data.setCell(4, 2, 'tests.LogInPageTest')
-data.setCell(4, 3, 39);
+data.setCell(4, 3, 36);
 window.suiteTableData['box_com']= { tableData: data, tableDiv: 'times-div-box_com'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-box_com">
               </div> <!-- times-div-box_com -->
             </div> <!-- times-div -->
@@ -303,51 +324,53 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPageTitle</span>
-                <span class="method-start">3113 ms</span>
+                <span class="method-start">7102 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3162 ms</span>
+                <span class="method-start">7152 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setupHome</span>
-                <span class="method-start">5347 ms</span>
+                <span class="method-start">10486 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyTitle</span>
-                <span class="method-start">14193 ms</span>
+                <span class="method-start">19661 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LogInPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyResetPasswordTest</span>
-                <span class="method-start">19236 ms</span>
+                <span class="method-start">24734 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">createFolder(folder1, h2so4in2008@gmail.com, Editor)</span>
-                <span class="method-start">20572 ms</span>
+                <span class="method-start">26483 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34915 ms</span>
+                <span class="method-start">40973 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LogInPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">35373 ms</span>
+                <span class="method-start">41459 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">41889 ms</span>
+                <span class="method-start">52409 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

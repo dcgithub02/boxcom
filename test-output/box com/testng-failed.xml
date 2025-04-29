@@ -6,15 +6,14 @@
   </listeners>
   <test thread-count="4" name="box(failed)">
     <classes>
-      <class name="tests.LogInPageTest">
+      <class name="tests.HomePageTest">
         <methods>
-          <include name="loginTest"/>
-          <include name="verifyLoginPageTitle"/>
+          <include name="setupHome"/>
           <include name="tearDown"/>
+          <include name="verifyTitle"/>
           <include name="setup"/>
-          <include name="verifyResetPasswordTest"/>
         </methods>
-      </class> <!-- tests.LogInPageTest -->
+      </class> <!-- tests.HomePageTest -->
     </classes>
   </test> <!-- box(failed) -->
 </suite> <!-- Failed suite [box com] -->
