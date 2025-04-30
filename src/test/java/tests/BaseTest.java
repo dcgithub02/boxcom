@@ -35,7 +35,7 @@ public class BaseTest
 		lp= new LogInPage(driver);
 	}
 	
-	@BeforeClass
+	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();

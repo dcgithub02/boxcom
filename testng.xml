@@ -9,7 +9,7 @@
 
   <test  name="box" >
     <classes>
-		<class  name="tests.LogInPageTest" ></class>
+		<class  name="tests.LogInPageTest" ></class>	
 		</classes>
   </test> 
 </suite> 

@@ -1,25 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 12.023 s <<< FAILURE! - in TestSuite
-verifyTitle(tests.HomePageTest)  Time elapsed: 5.013 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.pp" is null
-	at tests.HomePageTest.setupHome(HomePageTest.java:19)
-	at tests.HomePageTest.verifyTitle(HomePageTest.java:30)
-
-verifyLoginPageTitle(tests.LogInPageTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "com.box.pages.LogInPage.getLoginPageTitle()" because "this.lp" is null
-	at tests.LogInPageTest.verifyLoginPageTitle(LogInPageTest.java:35)
-
-createFolder(tests.HomePageTest)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "com.box.pages.HomePage.createFolder(String, String, String)" because "this.hp" is null
-	at tests.HomePageTest.createFolder(HomePageTest.java:45)
-
-verifyResetPasswordTest(tests.LogInPageTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "com.box.pages.LogInPage.verifyResetPasswordLink()" because "this.lp" is null
-	at tests.LogInPageTest.verifyResetPasswordTest(LogInPageTest.java:43)
-
-loginTest(tests.LogInPageTest)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.pp" is null
-	at tests.LogInPageTest.loginTest(LogInPageTest.java:52)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.522 s - in TestSuite
