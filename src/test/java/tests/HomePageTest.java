@@ -13,7 +13,7 @@ import com.box.utlis.ExcelUtlis;
 public class HomePageTest extends BaseTest
 {
 
-		@BeforeClass
+	
 	public void setupHome()
 	{
 		hp=lp.login(pp.getProperty("username"), pp.getProperty("password"));
@@ -27,6 +27,7 @@ public void verifyTitle()
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+	setupHome();
 	hp.getHomeTitle();
 	
 	Assert.assertEquals(hp.getHomeTitle(), ConstantsUtils.HOME_TITLE);

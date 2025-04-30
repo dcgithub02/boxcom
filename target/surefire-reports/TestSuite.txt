@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 2, Errors: 0, Skipped: 8, Time elapsed: 4.487 s <<< FAILURE! - in TestSuite
-setup(tests.HomePageTest)  Time elapsed: 2.704 s  <<< FAILURE!
-org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:64296/devtools/browser/9fc5f776-49eb-4f84-9771-0bf2caf67c0d
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-O7TR4TL', ip: '192.168.29.194', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
-Driver info: driver.version: ChromeDriver
-
-setup(tests.LogInPageTest)  Time elapsed: 3.666 s  <<< FAILURE!
-org.openqa.selenium.remote.http.ConnectionFailedException: 
-Unable to establish websocket connection to http://localhost:64311/devtools/browser/9f58696a-4846-4af5-8aa8-2e2935100628
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-O7TR4TL', ip: '192.168.29.194', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.13'
-Driver info: driver.version: ChromeDriver
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 72.549 s - in TestSuite
