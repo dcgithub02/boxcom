@@ -5,8 +5,10 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -28,12 +30,12 @@ public class BaseTest
 	@BeforeClass
 	public void setup() {
 		base = new BasePage();
-		driver=base.init_driver("firefox");
+		driver=base.init_driver("chrome");
 		pp=base.init_properties();
 		lp= new LogInPage(driver);
 	}
 	
-	@AfterClass
+	@BeforeClass
 	public void tearDown()
 	{
 		driver.quit();
